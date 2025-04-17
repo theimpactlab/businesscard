@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function downloadContact() {
+            window.location.href = "https://impctlab.uk/bcard/contact.vcf";
+        }
+    </script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-xl p-6 max-w-md text-center">
+        <img src="https://impctlab.uk/bcard/profilepic.jpg" alt="Profile Picture" class="w-32 h-32 mx-auto rounded-full border-4 border-black">
+        <h2 class="text-2xl font-bold mt-4">Ryan Miemczyk</h2>
+        <p class="text-gray-500">Director</p>
+        
+        <div class="mt-6 flex flex-col gap-4">
+            <button onclick="downloadContact()" class="border border-black text-black px-4 py-2 rounded-lg w-full hover:bg-gray-200">Save My Contact</button>
+            <a href="mailto:ryan@theimpactlab.co.uk" class="border border-black text-black px-4 py-2 rounded-lg w-full text-center hover:bg-gray-200">Email: ryan@theimpactlab.co.uk</a>
+            <a href="tel:07787067808" class="border border-black text-black px-4 py-2 rounded-lg w-full text-center hover:bg-gray-200">Mobile: 07787067808</a>
+        </div>
+        
+        <div class="mt-6 border-t pt-4">
+            <h3 class="text-xl font-semibold">About Me</h3>
+            <p class="mt-4 text-gray-600">Accredited Researcher | Director of Research at Trust Impact | Director of OurImpact & the Impact Lab | Chair at Manchester Young Lives & Trustee at the YMCA | Masters athlete for England.</p>
+            <p class="mt-4 text-gray-600">I help charities measure the important stuff.</p>
+        </div>
+        
+        <div class="mt-6 border-t pt-4">
+            <h3 class="text-xl font-semibold">Socials</h3>
+            <div class="mt-2 flex justify-center gap-4">
+                <a href="https://www.linkedin.com/in/ryanmiemczyk" class="text-gray-600 hover:text-blue-500 text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a href="https://bsky.app/profile/ryanmiemczyk.ourimpact.co.uk" class="text-gray-600 hover:text-blue-500 text-2xl">🟦</a>
+                <a href="https://x.com/ryanmiemczyk" class="text-gray-600 hover:text-black text-2xl"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="mt-6 flex flex-col gap-4">
+            <a href="https://www.theimpactlab.co.uk" class="border border-black text-black px-4 py-2 rounded-lg w-full text-center hover:bg-gray-200">www.theimpactlab.co.uk</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</body>
+</html>
